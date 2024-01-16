@@ -19,9 +19,7 @@ export const counterSlice = createSlice({
     //   });
     //   return { ...state, users: deletedUser };
     // },
-    // editUsers: (state, action) => {
-    //   const editedUsers = state.users.map((user) => {
-
+    // editUsers: (state, action) => {]
     plus: (state) => {
       state.count += 1;
     },
