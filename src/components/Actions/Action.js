@@ -13,7 +13,6 @@ export const counterSlice = createSlice({
     users: [],
   },
   reducers: {
-    // userDelete: (state, action) => {
     plus: (state) => {
       state.count += 1;
     },
