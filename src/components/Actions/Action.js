@@ -17,8 +17,6 @@ export const counterSlice = createSlice({
     //   const deletedUser = state.users.filter((user) => {
     //     return user.id !== action.payload;
     //   });
-    //   return { ...state, users: deletedUser };
-    // },
     plus: (state) => {
       state.count += 1;
     },
