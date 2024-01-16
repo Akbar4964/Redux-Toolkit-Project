@@ -15,7 +15,6 @@ export const counterSlice = createSlice({
   reducers: {
     // userDelete: (state, action) => {
     //   const deletedUser = state.users.filter((user) => {
-    //     return user.id !== action.payload;
     plus: (state) => {
       state.count += 1;
     },
