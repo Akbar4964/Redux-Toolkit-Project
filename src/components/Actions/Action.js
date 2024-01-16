@@ -24,7 +24,6 @@ export const counterSlice = createSlice({
     //     if (user.id == action.payload.id) {
     //       return action.payload;
     //     }
-    //     return user;
     plus: (state) => {
       state.count += 1;
     },
