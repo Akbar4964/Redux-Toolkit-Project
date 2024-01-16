@@ -26,7 +26,7 @@ export const counterSlice = createSlice({
     //     }
     //     return user;
     //   });
-    //   return { ...state, users: editedUsers };
+    //   return
     plus: (state) => {
       state.count += 1;
     },
