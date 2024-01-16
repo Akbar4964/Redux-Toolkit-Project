@@ -22,7 +22,7 @@ export const counterSlice = createSlice({
     // editUsers: (state, action) => {
     //   const editedUsers = state.users.map((user) => {
     //     if (user.id == action.payload.id) {
-    //       return action.payload;
+
     plus: (state) => {
       state.count += 1;
     },
