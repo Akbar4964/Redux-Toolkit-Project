@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Gayrat",
+      "surname": "Nurullayev"
+    },
+    {
+      "id": 2,
+      "name": "Akbar",
+      "surname": "Shuhratullayev"
+    },
+    {
+      "name": "Ibrohim ",
+      "surname": "Otabekov",
+      "id": 3
+    }
+  ]
+}
