@@ -8,6 +8,7 @@ import {
   deleteOneUser,
   editOneUser,
 } from "../Redux/Type";
+import { FadeLoader } from "react-spinners";
 
 function Main() {
   useEffect(() => {
@@ -34,6 +35,14 @@ function Main() {
   const count = useSelector((state) => state.counter.count);
 
   const data = useSelector((state) => state.counter.users);
+
+  const loadingGet = useSelector((state) => state.counter.isLoadingGet);
+
+  const loadingAdd = useSelector((state) => state.counter.isLoadingAdd);
+
+  const loadingDel = useSelector((state) => state.counter.isLoadingDel);
+
+  const loadingEdit = useSelector((state) => state.counter.isLoadingEdit);
 
   const increment = () => dispatch(plus());
 
@@ -112,6 +121,10 @@ function Main() {
               Submit
             </button>
           </form>
+          <div className={loadingGet ? "loading" : "none"}></div>
+          <div className={loadingAdd ? "loading-add" : "add-none"}></div>
+          <div className={loadingDel ? "loading-del" : "del-none"}></div>
+          <div className={loadingEdit ? "loading-edit" : "edit-none"}></div>
           <table className="table">
             <thead>
               <tr>
