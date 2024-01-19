@@ -56,7 +56,7 @@ export const counterSlice = createSlice({
       })
       .addCase(addOneUser.rejected, (state, action) => {
         state.isLoadingAdd = false;
-        toast.error("Bunday url mavjud emas!", {
+        toast.error(`${action.error.message}`, {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -90,7 +90,7 @@ export const counterSlice = createSlice({
       })
       .addCase(deleteOneUser.rejected, (state, action) => {
         state.isLoadingDel = false;
-        toast.error("Bunday url mavjud emas!", {
+        toast.error(`${action.error.message}`, {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -127,7 +127,7 @@ export const counterSlice = createSlice({
       })
       .addCase(editOneUser.rejected, (state, action) => {
         state.isLoadingEdit = false;
-        toast.error("Bunday url mavjud emas!", {
+        toast.error(`${action.error.message}`, {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
