@@ -1,16 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Header } from "./style";
 import { useDispatch, useSelector } from "react-redux";
-import { minus, plus } from "../Actions/Action";
+
 import {
   addOneUser,
   allUserGet,
   deleteOneUser,
   editOneUser,
-} from "../Redux/Type";
-import { FadeLoader } from "react-spinners";
+} from "../../../../Redux/Type";
+import { minus, plus } from "../../../../Redux/reducers/userReducers";
 
-function Main() {
+function Hero() {
   useEffect(() => {
     dispatch(allUserGet());
   }, []);
@@ -180,4 +180,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Hero;

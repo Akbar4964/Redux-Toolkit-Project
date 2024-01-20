@@ -1,0 +1,1 @@
+export {default as PlusImg} from "./plus.png"

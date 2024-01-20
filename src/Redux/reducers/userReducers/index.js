@@ -4,7 +4,7 @@ import {
   allUserGet,
   deleteOneUser,
   editOneUser,
-} from "../Redux/Type";
+} from "../../Type";
 import { toast } from "react-toastify";
 
 export const counterSlice = createSlice({
@@ -142,3 +142,4 @@ export const counterSlice = createSlice({
 });
 
 export const { plus, minus, editUsers } = counterSlice.actions;
+export default counterSlice.reducer;

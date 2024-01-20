@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import { BASE_URL } from "../..";
+import { BASE_URL } from "../constants";
 
 export const allUserGet = createAsyncThunk("allUserGet/get", async () => {
   return await axios

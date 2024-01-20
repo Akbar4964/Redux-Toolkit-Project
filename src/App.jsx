@@ -1,12 +1,13 @@
 import React from "react";
-import Main from "./components/Main/Main";
+import { Layout } from "./components";
+import AppRoutes from "./routes/AppRotes";
 
 function App() {
   return (
     <>
-      <div className="container">
-        <Main />
-      </div>
+     <Layout>
+        <AppRoutes/>
+     </Layout>
     </>
   );
 }

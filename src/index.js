@@ -4,10 +4,9 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import { store } from "./components/Store/store";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-export const BASE_URL = " http://localhost:1111";
+import { store } from "./Redux/Store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
