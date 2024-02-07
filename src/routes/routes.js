@@ -4,11 +4,8 @@ import Contact from "../pages/contact";
 import Home from "../pages/home";
 
 export const publicRoutes = [
-    {path:routes.HOME, page:<Home/>},
-    {path:routes.ABOUT, page:<About/>}
-]
+  { path: routes.HOME, page: <Home /> },
+  { path: routes.ABOUT, page: <About /> },
+];
 
-
-export const privetRoutes = [
-    {path:routes.CONTACT, page:<Contact/>},
-]
+export const privetRoutes = [{ path: routes.CONTACT, page: <Contact /> }];
